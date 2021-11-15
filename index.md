@@ -100,10 +100,33 @@ Add the following to the docker-compose.yaml file:
  
 To save and exit the file in vim press the "ESC" button and type :wq
 
+Note: More information about the details in the .yaml file can be found in the resource link at the top of the page. In short, it will build two docker containers: a WordPress containter for the WordPress site and a MySQL container to store any data from the WordPress site. 
+
 Check to make sure the file saved properly by running the following command:
 
     cat docker-compose.yaml
    
 It should look similar to this:
 
-![Example 3](/docs/assets/images/Picture3.png)
+![Example 3](/docs/assets/images/Picture03.png)
+
+Lastly, exit out of the root user:
+
+    exit
+    
+# Step 5: Install WordPress
+
+Run the following command to use the .yaml file just created to build/install the WordPress image
+
+    sudo docker-compose up -d
+    
+Once the command has finished running, WordPress is installed!!!
+
+# Step 6: Access the WordPress Installation
+
+In your web browser, navigate to http://localhost:8080 or http://your_ip_address:8080
+
+This webpage will appear:
+
+![Exampe Four](/docs/assets/images/Picture4.png)
+
