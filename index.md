@@ -1,5 +1,7 @@
 # Docker Project: Install WordPress via Docker
 
+### Created by: Samantha Phillips
+
 Resources:
 
 https://linuxiac.com/wordpress-with-docker/
