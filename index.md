@@ -38,4 +38,16 @@ After docker-compose is finished installing, run the following command to check 
 Here is what my result looked like after running the command:
 
 
-![Example One](/DockerProject.io/docs/assets/Picture1.png)
+![Example One](/docs/assets/images/Picture1.png)
+
+
+## Step 3: Install WordPress
+
+First, create a folder for the WordPress installation to store the WordPress data:
+
+       sudo mkdir /srv/wordpress
+       cd /srv/wordpress
+       
+Example:
+
+![Example Two] (/docs/assets/images/Picture2.png)
