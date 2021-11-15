@@ -4,7 +4,7 @@
 
 Resources:
 
-https://linuxiac.com/wordpress-with-docker/
+[https://linuxiac.com/wordpress-with-docker/](https://linuxiac.com/wordpress-with-docker/)
 
 
 ## Step 1: Install Docker
