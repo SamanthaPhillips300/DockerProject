@@ -53,7 +53,7 @@ Example:
 
 ## Step 4: Create the YAML File
 
-Purpose: yaml file allows for the deployment, combination and configuration of multiple docker-container at the same time.
+Purpose: yaml file allows for the deployment, combination and configuration of multiple docker containers at the same time.
 
 First, install vim (or another text editor)
 
@@ -130,3 +130,16 @@ This webpage will appear:
 
 ![Exampe Four](/docs/assets/images/Picture4.png)
 
+Follow the insturctions to set up your account and then you will be ready to create a WordPress site!
+
+# Appendix
+
+## Screenshot of my WordPress Admin Interface
+
+![WordPress Admin](/docs/assets/images/Picture6.png)
+
+## Screenshot of the WordPress Page I made:
+
+![WordPress Page](/docs/assets/images/Picture7.png)
+
+This screenshot is from me accessing the webpage on my computer versus inside the VM :)
