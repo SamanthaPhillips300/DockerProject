@@ -1,37 +1,39 @@
-## Welcome to GitHub Pages
+# Docker Project: Install WordPress via Docker
 
-You can use the [editor on GitHub](https://github.com/SamanthaPhillips300/DockerProject.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Resources:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+https://linuxiac.com/wordpress-with-docker/
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Step 1: Install Docker
 
-```markdown
-Syntax highlighted code block
+Run the following two commands:
 
-# Header 1
-## Header 2
-### Header 3
+    sudo apt update
+    sudo apt install docker.io
+    
+Notes: 
+The first command updates apt, so it is pulling the latest installs from the apt repository.
+The second command installs docker from the apt repository.
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+## Step 2: Install Docker Compose
 
-**Bold** and _Italic_ and `Code` text
+First, install curl with the following command:
 
-[Link](url) and ![Image](src)
-```
+    sudo apt install curl
+  
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+So, what is curl? Well, I'm glad you asked. Curl is a command line tool to transfer data to or from a server. We will be using it to install Docker Compose from Github. Docker Compose is a tool that was developed to help define and share multi-container applications.
 
-### Jekyll Themes
+Next, run the following commands to install docker-compose:
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/SamanthaPhillips300/DockerProject.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+    sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+    sudo chmod +x /usr/local/bin/docker-compose
+    
+After docker-compose is finished installing, run the following command to check the installation is successful and the version.
 
-### Support or Contact
+    docker-compose –version
+    
+Here is what my result looked like after running the command:
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
