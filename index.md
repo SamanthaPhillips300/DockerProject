@@ -37,4 +37,5 @@ After docker-compose is finished installing, run the following command to check 
     
 Here is what my result looked like after running the command:
 
-![Book logo](/DockerProject.io/Picture1.png)
+
+![Example One](/DockerProject.io/docs/assets/Picture1.png)
